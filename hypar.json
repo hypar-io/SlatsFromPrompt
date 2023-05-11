@@ -1,0 +1,59 @@
+{
+  "$schema": "https://hypar.io/Schemas/Function.json",
+  "id": "27c78467-6db1-43ec-bcf0-b411da0f0714",
+  "name": "Image From Prompt",
+  "description": "The ImageFromPrompt function.",
+  "language": "C#",
+  "input_schema": {
+    "type": "object",
+    "required": [
+      "Prompt"
+    ],
+    "properties": {
+      "Prompt": {
+        "$hyparOrder": 0,
+        "$hyparStyle": "multiline",
+        "type": [
+          "string",
+          "null"
+        ],
+        "default": "A honeycomb pattern."
+      },
+      "X Dimension": {
+        "type": "number",
+        "$hyparUnitType": "length",
+        "default": 20.0
+      },
+      "Y Dimension": {
+        "type": "number",
+        "$hyparUnitType": "length",
+        "default": 20.0
+      },
+      "Z Dimension": {
+        "type": "number",
+        "$hyparUnitType": "length",
+        "default": 20.0
+      },
+      "Slat Count": {
+        "type": "integer",
+        "default": 40
+      },
+      "Slat Resolution": {
+        "type": "integer",
+        "default": 10
+      },
+      "Invert": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "messages": {
+    "en": {
+      "name": "Slats from prompt"
+    }
+  },
+  "repository_url": "https://github.com/hypar-io/function",
+  "last_updated": "0001-01-01T00:00:00",
+  "cli_version": "1.4.0-alpha.4"
+}
